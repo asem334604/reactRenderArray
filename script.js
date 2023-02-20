@@ -57,7 +57,7 @@ function CarNode2(props) {
         </div>);
 }
 
-function CarList2(props) {
+function CarList2() {
     //useState not working
     ///const [state, setState] = useState({arr: cars})
 
