@@ -2,7 +2,7 @@ const rootNode = document.getElementById('root');
 const root = ReactDOM.createRoot(rootNode);
 
 
-// classes code
+// classes
 class CarNode1 extends React.Component {
 
     constructor(props) {
@@ -46,9 +46,8 @@ class CarList1 extends React.Component {
     }
 }
 
-//functional style
+//functional
 function CarNode2(props) {
-
     return (
         <div key={props.serialNumber} className={'card'}>
             <h2>{props.model}</h2>
@@ -56,11 +55,10 @@ function CarNode2(props) {
             <h4>{props.year}</h4>
             <p>{props.serialNumber}</p>
         </div>);
-
 }
 
 function CarList2(props) {
-    //not working
+    //useState not working
     ///const [state, setState] = useState({arr: cars})
 
     // works, cant use setState
@@ -90,7 +88,6 @@ class App extends React.Component {
             </div>
         );
     }
-
 }
 
 root.render(<App/>);
